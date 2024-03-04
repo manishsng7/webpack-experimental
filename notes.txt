@@ -1,0 +1,50 @@
+npm init -y 
+git init . 
+
+
+mkdir src
+cd src
+
+touch index.html
+touch index.js
+
+
+npm install react react-dom
+
+
+add content to index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+add content to index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <h1>Hello World</h1>,
+  document.getElementById('root')
+);
+
+
+
+
+install webpack 
+npm install webpack webpack-cli webpack-dev-server --save-dev
+
+
+touch webpack.config.js
+
+write entry and output in webpack.config.js
